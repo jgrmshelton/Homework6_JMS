@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Weather Dashboard</title>
+</head>
+<body>
+    <header>Weather Dashboard</header>
+    <aside>
+        <!--Skip heading ranks-->
+        <h4>City, State:</h4>
+        <form>
+            <div>
+                <input type="text" class="form-search" id="city-search" placeholder="Search"/>
+                <button id="searchButton" type="button">Submit</button>
+                <i class="fa fa-home" aria-hidden="true"></i>
+            </div>
+        </form>
+    </aside>
+    <section>
+        <!--Serch History-->
+        <ul class="list" id="history"></ul>
+        <button class="hide" id="clear-history">Clear History</button>
+        <h2 class="current-city id="current-date">City Weather Information <!--change font--></h2>
+        <p class="a">Temperature<span id="temp"></span></p>
+        <p class="b">Humidity<span id="humidity"></span></p>
+        <p class="c">Wind Speed<span id="wind"></span></p>
+        <div class="row">
+            <h3>5-Day Forecast</h3>
+        </div>
+        <div id="five-day-forecast" class="row">
+            <div class="card">
+                <h4 class="c-title">Date</h4>
+                <p class="c-text">Temperature:</p>
+                <p class="c-text">Humidity:</p>
+            </div>
+        </div>
+    </section>
+    
+</body>
+</html>
